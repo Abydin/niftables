@@ -1,26 +1,40 @@
 {
-  "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+	"compilerOptions": {
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"paths": {
+			"@provider/*": ["./src/providers/*"],
+			"@store/*": ["./src/stores/*"],
+			"@ui/*": ["./src/components/common/*"],
+			"@ui": ["./src/components/common/"],
+			"@src/*": ["./src/*"],
+			"@video/*": ["./videos/*"],
+			"@type/*": ["./src/type/*"],
+			"@type": ["./src/type/"],
+			"@hook/*": ["/src/hooks/*"],
+			"@hook": ["/src/hooks"],
+			"@util/*": ["./src/utils/*"],
+			"@util": ["./src/utils/"],
+			"@icon/*": ["./src/components/icons/*"],
+			"@icon": ["./src/components/icons/"],
+			"@module/*": ["./src/components/modules/*"]
+		}
+	},
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+	"exclude": ["node_modules"]
 }
